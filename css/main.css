@@ -69,27 +69,25 @@ header {
 /*-------------------IMGEN---------------------*/
 .img-icon {
    position: relative; /* Establece la posición relativa para que los iconos se posicionen dentro de este contenedor */
-   
 }
 .contenedor-opa{
   padding: 10vw;
-  padding-bottom: 100%;
+  padding-bottom: 58vw;
   margin-top: 5vw;
   margin-left: 15vw;
   margin-right: 15vw;
   margin-bottom: 10vw;
   border-radius: 5vw;
   background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 20px 0.1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px 0.1px rgb(123, 135, 236);
   
 }
 .img-fondo {
   display: block;
   width: 100%;
   top: 0;
-  opacity: 1;
   -webkit-mask-image: linear-gradient(to top, transparent, rgb(255, 255, 255)); /* Para compatibilidad con navegadores WebKit */
-  mask-image: linear-gradient(to top, bottom, transparent, rgb(255, 255, 255)); /* Aplica el degradado */
+  mask-image: linear-gradient(to top, transparent, rgb(255, 255, 255)); /* Aplica el degradado */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -97,7 +95,7 @@ header {
   position: absolute;
   opacity: 80%;
   width: 40%;
-  top: 25%; /* Ajusta la posición verticalmente al centro */
+  top: 35%; /* Ajusta la posición verticalmente al centro */
   left: 0; /* Ajusta la posición horizontalmente al centro */
   right: 0; /* Ajusta la posición horizontalmente al centro */
   bottom: 70%; /* Ajusta la posición verticalmente al centro */
@@ -105,57 +103,36 @@ header {
 }
 /*------------------BAR-REDES------------------*/
 .barra-transparente {
-  position: absolute;
-  top: 35%;
-  left: 0%;
-  width: 100%;
-  display: flex;
-  justify-content: center; /* Alinea los elementos a la derecha */
-  opacity: 50%;
-}
-.barra-transparente a i{
-  justify-content: center; /* Alinea los elementos a la derecha */
-  padding: 2vw; /* Ajusta el relleno según tus necesidades */
-  top: 10vh; /* Coloca el corazón a un 10% de la altura de la ventana */
-  left: 20vw; /* Coloca el corazón a un 20% del ancho de la ventana */
-  font-size: 5vw; /* Tamaño del corazón relativo al ancho de la ventana */
-
-}
-.barra-transparente a,
-.barra-transparente button {
-  color: #ffffff; /* Color de texto */
-  text-decoration: none; /* Elimina la decoración de texto para los enlaces */
-  margin-left: 0px; /* Espacio entre los elementos */
-}
-
-.barra-transparente a:hover,
-.barra-transparente button:hover {
-  opacity: 0.7; /* Opacidad reducida al pasar el mouse */
+  margin-top: 5vw;
+  position:absolute;
+  flex-direction: column;
 }
 
 .boton {
-  position: absolute;
-  text-align: center;
+  margin-bottom: 6vw; /* Espacio entre cada botón */
+  border: none; /* Elimina el borde del botón */
+  justify-content: center; /* Alinea los elementos a la derecha */
   color: #ffffff;
   text-decoration: none;
-  border: none;
   font-family: "Segoe UI";
   font-weight: 500;
-  font-size: 5vw;
-  background-color: rgba(0, 132, 255, 0.315); /* Color de fondo del botón */
+  font-size: 3vw;
+  background-color: rgba(45, 45, 58, 0.466); /* Color de fondo del botón */
   width: 50vw;
   height: 10vw;
-  top: 70vw;
+  top: 10vw;
   border-radius: 5vw;
   cursor: pointer;
-  box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.1); /* Agrega una sombra por debajo del botón */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.300); /* Agrega una sombra por debajo del botón */
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
   overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
   text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
 }
 .boton:hover {
-  background-color: #000000c4; /* Color de fondo del botón cuando el cursor está sobre él */
+  background-color: #00000050; /* Color de fondo del botón cuando el cursor está sobre él */
+}
+.boton a i{
+  color: #ffffff;
 }
 /*------------------PARRAFO--------------------*/
-
 
