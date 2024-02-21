@@ -31,36 +31,35 @@ body::-webkit-scrollbar-thumb {
   }
   /*------------------main-----------------------*/
 .contenedor-info{
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 0vw;
-  padding-bottom: 0vw;
+  padding: 5vw;
   overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
 }
 .text-video {
-  font-size: 9vw;
+  margin: 0;
+  padding: 0;
+  font-size: 8vw;
   font-weight: 900;
   font-family: 'Arial', sans-serif; /* Fuente moderna */
   text-align: center;
   color: rgb(255, 255, 255);
 }
 .contenedor-info iframe{
+  padding-top: 5vw;
   width: 100%;
   height: 50vw;
-  
-  
 }
 
   /*------------------infofloat-----------------*/
 .contenedor {
   display: flex;
   flex-direction: column; /* Cambia la dirección de los bloques a vertical */
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
   width: 100%;
 }
 .info-negocio {
-  padding: 2vw;
-  font-size: 5vw;
+  margin: 0;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-size: 11vw;
   font-weight: 900;
   font-family: 'Arial', sans-serif; /* Fuente moderna */
   text-align: center;
@@ -72,6 +71,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2vw; /* Esquinas redondeadas */
   overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
   border: 2vw;
+  box-shadow: 0px 0px 2px 0.1px rgb(123, 135, 236);
   }
 
 .imagen {
@@ -187,4 +187,56 @@ body::-webkit-scrollbar-thumb {
   display: block;
   clear: both;
 }
-/*------------------BODY-----------------------*/
+/*------------------year-----------------------*/
+.year iframe{
+  padding-top: 5vw;
+  width: 100%;
+  height: 50vw;
+}
+.year h1 {
+  margin: 0;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-size: 6vw;
+  font-weight: 900;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
+}
+.year h2 {
+  margin: 0;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-size: 5vw;
+  font-weight: 900;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
+}/*------------------2x2----------------------*/
+.contenedor-2x2 {
+  margin: 5vw;
+  padding: 5vw;
+  background-color: #00000098;
+  border-radius: 5vw;
+  box-shadow: 0px 0px 1px 0.5px rgb(123, 135, 236);
+  
+}
+.contenedor-2x2 h2{
+ text-align: center;
+ font-weight: 600;
+ font-size:6vw;
+}
+.contenedor-v2x2 {
+ 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+  grid-gap: 10px; /* Espacio entre los elementos */
+}
+
+.video {
+  width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+}
