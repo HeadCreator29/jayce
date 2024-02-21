@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+  }
+  /*------------------BODY-----------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/fondo1.jpg");
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-attachment: fixed; /* Hace que el fondo se mantenga fijo al desplazar la página */
+  color: white; /* Esto cambiará el color del texto a blanco */
+  }
+body::-webkit-scrollbar {
+  width: 1vw;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);        /* color of the tracking area */
+  box-shadow: inset 0 0 1vw grey;
+  }
+  
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 97, 167);    /* color of the scroll thumb */
+  border-radius: 5vw;       /* roundness of the scroll thumb */
+  }
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  }
+  /*------------------main-----------------------*/
+.contenedor-info{
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+}
+.text-video {
+  font-size: 9vw;
+  font-weight: 900;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.contenedor-info iframe{
+  width: 100%;
+  height: 50vw;
+  
+  
+}
+
+  /*------------------infofloat-----------------*/
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de los bloques a vertical */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+  width: 100%;
+}
+.info-negocio {
+  padding: 2vw;
+  font-size: 5vw;
+  font-weight: 900;
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.bloque {
+  flex: 1;
+  margin-bottom: 5vw; /* Espacio entre bloques */
+  border-radius: 2vw; /* Esquinas redondeadas */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+  border: 2vw;
+  }
+
+.imagen {
+  float: left;
+  width: 20vw;
+}
+   
+.imagen img {
+  display: block;
+  width: 20vw;
+  height: 25vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+.imagen-right {
+  float: right;
+  width: 20vw;
+}
+.img-right {
+  display: block;
+  width: 20vw;
+  height: 25vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+.imagen-right-perfil {
+  float: right;
+  width: 20vw;
+}
+.img-right-perfil {
+  display: block;
+  width: 20vw;
+  height: 18vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+.texto {
+  position: absolute; /* Posicionamiento absoluto */
+  margin-left: 20vw;
+  padding: 1vw;
+  float: left;
+  width: 70%;
+  height: 25vw;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #00000098; /* Color de fondo oscuro */
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+}
+.texto-right {
+  position: absolute; /* Posicionamiento absoluto */
+  margin-right: 20vw;
+  padding: 1vw;
+  float: right;
+  width: 70%;
+  height: 25vw;
+  box-sizing: border-box;
+  text-align: right;
+  background-color: #00000098; /* Color de fondo oscuro */
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+}
+.texto-right-perfil {
+  position: absolute; /* Posicionamiento absoluto */
+  margin-right: 20vw;
+  padding: 1vw;
+  float: right;
+  width: 70%;
+  height: 18vw;
+  box-sizing: border-box;
+  text-align: right;
+  background-color: #00000098; /* Color de fondo oscuro */
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+}
+.texto p {
+  margin: 0;
+  padding: 2vw;
+  font-size: 2.4vw;
+  line-height: 1.6;
+  color: #bec5d8; /* Color de texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  font-weight: 500; /* Grosor en negrita */
+  border-radius: 2vw;
+}
+.text-p {
+  margin: 0;
+  padding: 2vw;
+  font-size: 2.4vw;
+  line-height: 1.6;
+  color: #bec5d8; /* Color de texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  font-weight: 500; /* Grosor en negrita */
+  border-radius: 2vw;
+  
+}
+.text-p-1 {
+  margin: 0;
+  padding: 2vw;
+  font-size: 2.4vw;
+  line-height: 1.6;
+  color: #bec5d8; /* Color de texto blanco */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  font-weight: 500; /* Grosor en negrita */
+  border-radius: 2vw;
+  
+}
+.bloque::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*------------------BODY-----------------------*/

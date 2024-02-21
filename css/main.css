@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+/*------------------BODY-----------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/fondo3.jpg");
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-attachment: fixed; /* Hace que el fondo se mantenga fijo al desplazar la página */
+  color: white; /* Esto cambiará el color del texto a blanco */
+}
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);        /* color of the tracking area */
+  box-shadow: inset 0 0 5px grey;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 97, 167);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+ 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*-------------------BAR-----------------------*/
+.Contenedor-bar{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #242424; /* Color de fondo de la barra de menú */
+  top: 0; /* La barra de navegación se pegará en la parte superior de la ventana */
+  padding: 10px 0; /* Espaciado interior de la barra de menú */
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+  position: sticky;
+}
+.barra-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+.barra-menu ul li {
+  margin: 0 5vw; /* Espaciado entre elementos del menú */
+}
+.barra-menu ul li a {
+  font-family: Fantasy, sans-serif;
+  font-size: 2vw;
+  text-decoration: none;
+  color: #612df0; /* Color del texto del menú al pasar el mouse */
+}
+.barra-menu ul li a:hover {
+  color: #ffffff; /* Color del texto del menú al pasar el mouse */
+}
+.fa-envelope {
+  font-size: 2vw; /* Ajusta el tamaño según lo desees */
+  color: #612df0;
+}
+/*-------------------IMGEN---------------------*/
+.img-icon {
+   position: relative; /* Establece la posición relativa para que los iconos se posicionen dentro de este contenedor */
+}
+.contenedor-opa{
+  padding: 10vw;
+  padding-bottom: 55vw;
+  margin-top: 5vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 15vw;
+  border-radius: 5vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 20px 0.1px rgb(123, 135, 236);
+  
+}
+.img-fondo {
+  display: block;
+  width: 100%;
+  top: 0;
+  -webkit-mask-image: linear-gradient(to top, transparent, rgb(255, 255, 255)); /* Para compatibilidad con navegadores WebKit */
+  mask-image: linear-gradient(to top, transparent, rgb(255, 255, 255)); /* Aplica el degradado */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img-text {
+  position: absolute;
+  opacity: 80%;
+  width: 40%;
+  top: 35%; /* Ajusta la posición verticalmente al centro */
+  left: 0; /* Ajusta la posición horizontalmente al centro */
+  right: 0; /* Ajusta la posición horizontalmente al centro */
+  bottom: 70%; /* Ajusta la posición verticalmente al centro */
+  margin: auto; /* Alinea la imagen horizontalmente */
+}
+/*------------------BAR-REDES------------------*/
+.barra-transparente {
+  margin-top: 8vw;
+  position:absolute;
+  flex-direction: column;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.5s ease;
+  margin-bottom: 6vw; /* Espacio entre cada botón */
+  border: none; /* Elimina el borde del botón */
+  justify-content: center; /* Alinea los elementos a la derecha */
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Segoe UI";
+  font-weight: 500;
+  font-size: 3vw;
+  background-color: rgba(45, 45, 58, 0.466); /* Color de fondo del botón */
+  width: 50vw;
+  height: 8vw;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.300); /* Agrega una sombra por debajo del botón */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
+}
+.boton:hover {
+  background-color: #00000050; /* Color de fondo del botón cuando el cursor está sobre él */
+}
+.boton i{
+  color: #ffffff;
+  margin-right: 5px;
+  margin-top: 2px;
+  
+}
+/*------------------PARRAFO--------------------*/
+
+
