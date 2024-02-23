@@ -93,6 +93,7 @@ header {
   right: 0; /* Ajusta la posición horizontalmente al centro */
   margin: auto; /* Alinea la imagen horizontalmente */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10vw;
 }
 /*------------------BAR-REDES------------------*/
 .barra-transparente {
