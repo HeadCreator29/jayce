@@ -72,6 +72,7 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
   border: 2vw;
   box-shadow: 0px 0px 2px 0.1px rgb(123, 135, 236);
+  
   }
 
 .imagen {
@@ -79,10 +80,9 @@ body::-webkit-scrollbar-thumb {
   width: 20vw;
 }
    
-.imagen img {
+.imagen-x2 {
   display: block;
-  width: 20vw;
-  height: 25vw;
+  height: 30vw;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
 }
@@ -92,8 +92,8 @@ body::-webkit-scrollbar-thumb {
 }
 .img-right {
   display: block;
-  width: 20vw;
-  height: 25vw;
+  width: 40vw;
+  height: 30vw;
   border-top-right-radius: 2vw;
   border-bottom-right-radius: 2vw;
 }
@@ -104,17 +104,17 @@ body::-webkit-scrollbar-thumb {
 .img-right-perfil {
   display: block;
   width: 20vw;
-  height: 18vw;
+  height: 25vw;
   border-top-right-radius: 2vw;
   border-bottom-right-radius: 2vw;
 }
 .texto {
   position: absolute; /* Posicionamiento absoluto */
-  margin-left: 20vw;
+  margin-left: 22.5vw;
   padding: 1vw;
   float: left;
-  width: 70%;
-  height: 25vw;
+  width: 67%;
+  height: 30vw;
   box-sizing: border-box;
   text-align: left;
   background-color: #00000098; /* Color de fondo oscuro */
@@ -124,6 +124,22 @@ body::-webkit-scrollbar-thumb {
 }
 .texto-right {
   position: absolute; /* Posicionamiento absoluto */
+  
+  margin-right: 20vw;
+  padding: 1vw;
+  float: right;
+  width: 70%;
+  height: 30vw;
+  box-sizing: border-box;
+  text-align: right;
+  background-color: #00000098; /* Color de fondo oscuro */
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+}
+.texto-right-perfil {
+  position: absolute; /* Posicionamiento absoluto */
+  margin: 0;
   margin-right: 20vw;
   padding: 1vw;
   float: right;
@@ -136,49 +152,35 @@ body::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 2vw;
   overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
 }
-.texto-right-perfil {
-  position: absolute; /* Posicionamiento absoluto */
-  margin-right: 20vw;
-  padding: 1vw;
-  float: right;
-  width: 70%;
-  height: 18vw;
-  box-sizing: border-box;
-  text-align: right;
-  background-color: #00000098; /* Color de fondo oscuro */
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
-}
 .texto p {
   margin: 0;
-  padding: 2vw;
-  font-size: 2.4vw;
-  line-height: 1.6;
+  padding-top: 0.5vw;
+  padding-left: 0.5vw;
+  font-size: 2.69vw;
   color: #bec5d8; /* Color de texto blanco */
   font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 500; /* Grosor en negrita */
+  font-weight: 900; /* Grosor en negrita */
   border-radius: 2vw;
 }
 .text-p {
   margin: 0;
-  padding: 2vw;
-  font-size: 2.4vw;
-  line-height: 1.6;
-  color: #bec5d8; /* Color de texto blanco */
+  padding-right: 1vw ;
+  font-size: 2.7vw;
+  color: hsl(224, 25%, 80%); /* Color de texto blanco */
   font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 500; /* Grosor en negrita */
+  font-weight: 900; /* Grosor en negrita */
   border-radius: 2vw;
   
 }
 .text-p-1 {
   margin: 0;
-  padding: 2vw;
-  font-size: 2.4vw;
-  line-height: 1.6;
+  padding: 1vw;
+  padding-right: 2vw;
+  font-size: 3vw;
+  line-height: 1.4;
   color: #bec5d8; /* Color de texto blanco */
   font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 500; /* Grosor en negrita */
+  font-weight: 900; /* Grosor en negrita */
   border-radius: 2vw;
   
 }
@@ -218,7 +220,7 @@ body::-webkit-scrollbar-thumb {
   text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
 }/*------------------2x2----------------------*/
 .contenedor-2x2 {
-  margin: 5vw;
+  margin-top: 10vw;
   padding: 5vw;
   background-color: #00000098;
   border-radius: 5vw;
@@ -239,4 +241,54 @@ body::-webkit-scrollbar-thumb {
 
 .video {
   width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+}
+/*------------------final----------------------*/
+.final p{
+  font-size: 5vw;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+.final h2{
+  text-align: center;
+  font-size: 8vw;
+  color: #9eb5ff;
+  font-weight: 900;
+  
+}
+/*--------------------boton------------*/
+.final button{
+  margin: auto; /* Alinea la imagen horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.5s ease;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  border: none; /* Elimina el borde del botón */
+  justify-content: center; /* Alinea los elementos a la derecha */
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  background-color: rgba(61, 60, 99, 0.712); /* Color de fondo del botón */
+  width: 90%;
+  height: 20vw;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.300); /* Agrega una sombra por debajo del botón */
+  overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
+}
+.final button:hover {
+  background-color: #00000050; /* Color de fondo del botón cuando el cursor está sobre él */
+}
+.ws{
+  position: absolute;
+  padding-bottom: 3vw;
+  font-size: 8vw;
+}
+.escribeme {
+  position: absolute;
+  padding-top: 10vw;
+  font-weight: 100;
+  font-size: 4vw;
 }
