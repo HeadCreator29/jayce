@@ -87,7 +87,7 @@ header {
 }
 .img-text {
   position: absolute;
-  width: 50%;
+  width: 40%;
   top: 78vw; /* Ajusta la posición verticalmente al centro */
   left: 0; /* Ajusta la posición horizontalmente al centro */
   right: 0; /* Ajusta la posición horizontalmente al centro */
