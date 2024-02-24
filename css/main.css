@@ -30,42 +30,6 @@ body::-webkit-scrollbar-thumb {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/*-------------------BAR-----------------------*/
-.Contenedor-bar{
-  margin: 0;
-  padding: 0;
-}
-header {
-  background-color: #242424; /* Color de fondo de la barra de menú */
-  top: 0; /* La barra de navegación se pegará en la parte superior de la ventana */
-  padding: 10px 0; /* Espaciado interior de la barra de menú */
-  z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
-  position: sticky;
-}
-.barra-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
-  align-items: center; /* Centra verticalmente los elementos */
-}
-.barra-menu ul li {
-  margin: 0 5vw; /* Espaciado entre elementos del menú */
-}
-.barra-menu ul li a {
-  font-family: Fantasy, sans-serif;
-  font-size: 2vw;
-  text-decoration: none;
-  color: #612df0; /* Color del texto del menú al pasar el mouse */
-}
-.barra-menu ul li a:hover {
-  color: #ffffff; /* Color del texto del menú al pasar el mouse */
-}
-.fa-envelope {
-  font-size: 2vw; /* Ajusta el tamaño según lo desees */
-  color: #612df0;
-}
 /*-------------------IMGEN---------------------*/
 .img-icon {
    position: relative; /* Establece la posición relativa para que los iconos se posicionen dentro de este contenedor */
@@ -87,13 +51,13 @@ header {
 }
 .img-text {
   position: absolute;
-  width: 40%;
-  top: 78vw; /* Ajusta la posición verticalmente al centro */
+  text-align: center;
+  top: 90vw; /* Ajusta la posición verticalmente al centro */
   left: 0; /* Ajusta la posición horizontalmente al centro */
   right: 0; /* Ajusta la posición horizontalmente al centro */
   margin: auto; /* Alinea la imagen horizontalmente */
+  font-size: 8vw;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 10vw;
 }
 /*------------------BAR-REDES------------------*/
 .barra-transparente {
@@ -117,7 +81,7 @@ header {
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 3vw;
-  background-color: rgba(45, 45, 58, 0.466); /* Color de fondo del botón */
+  background-color: rgba(65, 65, 110, 0.466); /* Color de fondo del botón */
   width: 60vw;
   height: 13vw;
   cursor: pointer;
@@ -137,6 +101,7 @@ header {
   font-family: Arial, sans-serif;
   font-weight: 700;
 }
+
 .icon {
   position: absolute;
   width: 15%;
