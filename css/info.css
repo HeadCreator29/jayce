@@ -31,13 +31,17 @@ body::-webkit-scrollbar-thumb {
   }
   /*------------------main-----------------------*/
 .contenedor-info{
-  padding: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
+
+  
+
 }
 .text-video {
   margin: 0;
   padding: 0;
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 900;
   font-family: 'Arial', sans-serif; /* Fuente moderna */
   text-align: center;
@@ -45,168 +49,34 @@ body::-webkit-scrollbar-thumb {
 }
 .contenedor-info iframe{
   padding-top: 5vw;
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   height: 50vw;
+  
 }
 
-  /*------------------infofloat-----------------*/
-.contenedor {
-  display: flex;
-  flex-direction: column; /* Cambia la dirección de los bloques a vertical */
-  width: 100%;
-}
-.info-negocio {
-  margin: 0;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  font-size: 11vw;
-  font-weight: 900;
-  font-family: 'Arial', sans-serif; /* Fuente moderna */
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-.bloque {
-  flex: 1;
-  margin-bottom: 5vw; /* Espacio entre bloques */
-  border-radius: 2vw; /* Esquinas redondeadas */
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
-  border: 2vw;
-  box-shadow: 0px 0px 2px 0.1px rgb(123, 135, 236);
+  /*--------------info-----------------*/
+  .info-negocio {
+    margin: 0;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    text-align: center;
+    color: rgb(255, 255, 255);
   }
-
-.imagen {
-  float: left;
-  width: 22.5vw;
-  overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones del contenedor */
-}
-   
-.imagen-x2 {
-  display: block;
-  width: 40vw;
-  height: 50vw;
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-  margin-left: -7vw; /* Ajusta la posición horizontal */
-}
-.imagen-right {
-  float: right;
-  width: 20vw;
-  overflow: hidden;
-}
-.img-right {
-  display: block;
-  width: 60vw;
-  height: 50vw;
-  border-top-right-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  margin-left: -10vw; /* Ajusta la posición horizontal */
-}
-.imagen-right-perfil {
-  float: right;
-  width: 20vw;
-  overflow: hidden;
-}
-.img-right-perfil {
-  display: block;
-  width: 35vw;
-  height: 40vw;
-  border-top-right-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  margin-left: -4.2vw; /* Ajusta la posición horizontal */
-}
-.texto {
-  position: absolute; /* Posicionamiento absoluto */
-  margin-left: 22.5vw;
-  padding: 1vw;
-  float: left;
-  width: 67%;
-  height: 50vw;
-  box-sizing: border-box;
-  text-align: left;
-  background-color: #00000098; /* Color de fondo oscuro */
-  border-top-right-radius: 2vw;
-  border-bottom-right-radius: 2vw;
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
-}
-.texto-right {
-  position: absolute; /* Posicionamiento absoluto */
-  margin-right: 20vw;
-  padding: 1vw;
-  float: left;
-  width: 70%;
-  height: 50vw;
-  box-sizing: border-box;
-  text-align: right;
-  background-color: #00000098; /* Color de fondo oscuro */
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
-}
-.texto-right-perfil {
-  position: absolute; /* Posicionamiento absoluto */
-  margin: 0;
-  margin-right: 20vw;
-  padding: 1vw;
-  float: left;
-  width: 70%;
-  height: 40vw;
-  box-sizing: border-box;
-  text-align: right;
-  background-color: #00000098; /* Color de fondo oscuro */
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-  overflow: hidden; /* Oculta cualquier contenido que se salga del bloque */
-}
-.texto p {
-  display: block;
-  margin: 0;
-  padding-top: 1.5vw;
-  padding-left: 0.5vw;
-  font-size: 3.4vw;
-  color: #bec5d8; /* Color de texto blanco */
-  font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 900; /* Grosor en negrita */
-  border-radius: 2vw;
-}
-.text-p {
-  margin: 0;
-  padding: 1.2vw;
-  padding-right: 2vw;
-  font-size: 3.4vw;
-  color: hsl(224, 25%, 80%); /* Color de texto blanco */
-  font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 900; /* Grosor en negrita */
-  border-radius: 2vw;
-  
-}
-.text-p-1 {
-  margin: 0;
-  padding: 1.7vw;
-  padding-right: 2vw;
-  font-size: 3.8vw;
-  line-height: 1.4;
-  color: #bec5d8; /* Color de texto blanco */
-  font-family: 'Arial', sans-serif; /* Fuente moderna */
-  font-weight: 900; /* Grosor en negrita */
-  border-radius: 2vw;
-  
-}
-.bloque::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-/*------------------year-----------------------*/
+/*------------------year----------------*/
 .year iframe{
   padding-top: 5vw;
-  width: 100%;
-  height: 50vw;
+  width: 90%;
+  height: 40vw;
 }
 .year h1 {
   margin: 0;
   padding-top: 5vw;
-  padding-bottom: 5vw;
-  font-size: 6vw;
+  font-size: 3vw;
   font-weight: 900;
   font-family: 'Arial', sans-serif; /* Fuente moderna */
   text-align: center;
@@ -226,50 +96,28 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
   text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que se sale del botón */
 }/*------------------2x2----------------------*/
-.contenedor-2x2 {
-  margin-top: 10vw;
-  padding: 5vw;
-  background-color: #00000098;
-  border-radius: 5vw;
-  box-shadow: 0px 0px 1px 0.5px rgb(123, 135, 236);
-  
-}
-.contenedor-2x2 h2{
- text-align: center;
- font-weight: 600;
- font-size:6vw;
-}
-.contenedor-v2x2 {
- 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-  grid-gap: 10px; /* Espacio entre los elementos */
-}
 
-.video {
-  width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
-}
-/*------------------final----------------------*/  
-.final p{
-  font-size: 5vw;
+/*------------------final----------------------*/.final p{
+  font-size: 2vw;
   text-align: center;
   font-family: Arial, sans-serif;
   font-weight: 600;
+  
 }
 .final h2{
+  text-align: center;
+  font-size: 4vw;
+  color: #9eb5ff;
+  font-weight: 900;
+
+}
+.final h1{
   text-align: center;
   font-size: 8vw;
   color: #9eb5ff;
   font-weight: 900;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.final h1{
-  text-align: center;
-  font-size: 20vw;
-  color: #9eb5ff;
-  font-weight: 900;
   margin: 0;
+  padding: 0;
 }
 /*--------------------boton------------*/
 .final button{
@@ -287,8 +135,8 @@ body::-webkit-scrollbar-thumb {
   font-family: Arial, sans-serif;
   font-weight: 700;
   background-color: rgba(0, 255, 0, 0.712); /* Color de fondo del botón */
-  width: 90%;
-  height: 20vw;
+  width: 50%;
+  height: 10vw;
   cursor: pointer;
   box-shadow: 2px 4px 8px rgba(226, 0, 196, 0.3); /* Agrega una sombra por debajo del botón */
   overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
@@ -299,11 +147,72 @@ body::-webkit-scrollbar-thumb {
 .ws{
   position: absolute;
   padding-bottom: 3vw;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 .escribeme {
   position: absolute;
-  padding-top: 10vw;
+  padding-top: 5vw;
   font-weight: 100;
-  font-size: 4vw;
+  font-size: 2vw;
+}  
+
+@media only screen and (max-width: 460px) {
+  .final p{
+    font-size: 5vw;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+  }
+  .final h2{
+    text-align: center;
+    font-size: 8vw;
+    color: #9eb5ff;
+    font-weight: 900;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .final h1{
+    text-align: center;
+    font-size: 20vw;
+    color: #9eb5ff;
+    font-weight: 900;
+    margin: 0;
+  }
+  /*--------------------boton------------*/
+  .final button{
+    margin: auto; /* Alinea la imagen horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.5s ease;
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+    border: none; /* Elimina el borde del botón */
+    justify-content: center; /* Alinea los elementos a la derecha */
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    background-color: rgba(0, 255, 0, 0.712); /* Color de fondo del botón */
+    width: 90%;
+    height: 20vw;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(226, 0, 196, 0.3); /* Agrega una sombra por debajo del botón */
+    overflow: hidden; /* Oculta cualquier texto que sobresalga del botón */
+  }
+  .final button:hover {
+    background-color: #4e8b3d8a; /* Color de fondo del botón cuando el cursor está sobre él */
+  }
+  .ws{
+    position: absolute;
+    padding-bottom: 3vw;
+    font-size: 8vw;
+  }
+  .escribeme {
+    position: absolute;
+    padding-top: 10vw;
+    font-weight: 100;
+    font-size: 4vw;
+  }
+  
 }
