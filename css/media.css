@@ -31,6 +31,7 @@
     max-height: 187px; /* Altura máxima del contenedor */
     text-align: left;
     overflow: auto; /* Añade barras de desplazamiento si el contenido excede la altura máxima */
+    overflow-x: hidden;
     font-size: 20px;
   }
   .item p::-webkit-scrollbar {
